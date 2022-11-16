@@ -1,0 +1,48 @@
+@import "./scss/color.scss";
+@import "./scss/sizes.scss";
+
+.App {
+  text-align: center;
+  background: url("./assets/TRVSTR.jpg"), $invertedTextColor;
+  background-size: 200%;
+  &.about {
+    background: url("./assets/jr.jpeg"), $invertedTextColor;
+  }
+  &.contact {
+    background: url("./assets/jr2.jpeg"), $invertedTextColor;
+  }
+}
+
+.filter-div {
+  backdrop-filter: blur(12px) brightness(.5);
+  height: 100%;
+  min-height: 100vh;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.content {
+  box-sizing: border-box;
+  padding: $contentAreaPadding 0;
+  min-height: calc(100vh - $headerHeight - $footerHeight);
+}
+
+@media only screen and (max-width: 1024px) {
+  .content {
+    padding-top: 106px;
+    padding-bottom: 40px;
+  }
+}

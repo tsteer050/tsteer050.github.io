@@ -1,0 +1,74 @@
+@import "./scss/color.scss";
+
+@font-face {
+  font-family: 'canela';
+  src: local('Canela-Regular-Trial'), url(../public/fonts/Canela-Regular-Trial.otf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'textbookRegular';
+  src: url(../public/fonts/TextBook-Regular.ttf) format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'textbookBold';
+  src: url(../public/fonts/TextBook-Bold.ttf) format('truetype');
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $invertedTextColor;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, button, input[type=submit] {
+  font-family: 'canela';
+  color: $textColor;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+a {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+button, input[type=submit] {
+  cursor: pointer;
+  background: none;
+  box-sizing: border-box;
+  border: 2px solid $textColor;
+  transition: all 0.2s ease-in-out;
+  padding: 13px 26px;
+  font-weight: 1000;
+  letter-spacing: 3px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: $textColor;
+    color: $invertedTextColor;
+  }
+}
+
+input[type=text], input[type=email] {
+  height: 46px;
+  box-sizing: border-box;
+  padding: 0 26px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

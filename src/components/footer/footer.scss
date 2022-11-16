@@ -1,0 +1,27 @@
+@import "../../scss/color.scss";
+@import "../../scss/sizes.scss";
+
+.subscribe-footer {
+    box-sizing: border-box;
+    width: 100vw;
+    min-height: $footerHeight;
+    background: $invertedTextColor;
+    padding: 36px 0;
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        input {
+            width: 240px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .subscribe-footer form {
+        flex-direction: column;
+        padding: 0 48px;
+        gap: 12px;
+    }
+}
