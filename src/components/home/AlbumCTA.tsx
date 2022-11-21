@@ -11,9 +11,9 @@ const AlbumCTA = () => {
                 <h1>USE YOUR INSIDE VOICE</h1>
                 <h2>The debut album</h2>
                 <h3>Individual tracks release starting Jan 2023</h3>
-                <Link to="/listen">
+                {/* <Link to="/listen">
                     <button>STREAM / BUY</button>
-                </Link>
+                </Link> */}
 
             </div>
         </div>
