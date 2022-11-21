@@ -1,5 +1,6 @@
 import React from "react";
 import coverArt from "../../assets/TRVSTR.jpg";
+import { Link } from "react-router-dom";
 import "./albumCTA.scss";
 
 const AlbumCTA = () => {
@@ -10,7 +11,10 @@ const AlbumCTA = () => {
                 <h1>USE YOUR INSIDE VOICE</h1>
                 <h2>The debut album</h2>
                 <h3>Individual tracks release starting Jan 2023</h3>
-                <button>STREAM / BUY</button>
+                <Link to="/listen">
+                    <button>STREAM / BUY</button>
+                </Link>
+
             </div>
         </div>
     );

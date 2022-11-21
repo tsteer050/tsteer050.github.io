@@ -6,7 +6,6 @@ import "./footer.scss";
 
 const Footer = () => {
 
-    console.log('env', process.env.REACT_APP_MAILCHIMP_ID)
     const postUrl = `https://trevorsteer.us21.list-manage.com/subscribe/post?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`;
 
     return (

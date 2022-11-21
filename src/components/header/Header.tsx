@@ -20,15 +20,9 @@ const Header = () => {
                     About
                 </Link>
                 <h1 style={{ userSelect: "none" }}>TREVOR STEER</h1>
-                <a 
-                    href="https://google.com"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                    style={{ textDecoration: "none" }}
-                    onClick={() => setShowNavMenu(false)}
-                >
+                <Link to={"/listen"} style={{ textDecoration: "none" }} onClick={() => setShowNavMenu(false)}>
                     Listen
-                </a>
+                </Link>
                 <Link to={"/contact"} style={{ textDecoration: "none" }} onClick={() => setShowNavMenu(false)}>
                     Contact
                 </Link>

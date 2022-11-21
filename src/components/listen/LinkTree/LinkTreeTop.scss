@@ -1,0 +1,26 @@
+@import "../../../scss/color.scss";
+
+.linktree-top {
+    img {
+        display: inherit;
+        width: 320px;
+        height: 320px;
+    }
+}
+
+.linktree-top-text-area {
+    box-sizing: border-box;
+    height: 120px;
+    padding: 16px 0;
+    background: $invertedTextColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    & h3, h4, p {
+        margin: 0;
+    }
+    p {
+        margin-top: 8px;
+    }
+}
