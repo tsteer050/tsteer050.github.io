@@ -1,8 +1,5 @@
 @import "../../scss/sizes.scss";
 
 .contact-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: calc(100vh - $headerHeight - $footerHeight - (2 * $contentAreaPadding));
 }

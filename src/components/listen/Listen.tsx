@@ -4,7 +4,7 @@ import React from "react";
 const Listen = () => {
     return (
         <div className="listen">
-            <p>More to come soon...</p>
+            <p>Check back soon for updates...</p>
             {/* <LinkTree /> */}
         </div>
     );
