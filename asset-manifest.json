@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/tsteer050.github.io/static/css/main.2d97ae8b.css",
+    "main.js": "/tsteer050.github.io/static/js/main.594375f8.js",
+    "static/js/787.84264fb6.chunk.js": "/tsteer050.github.io/static/js/787.84264fb6.chunk.js",
+    "static/media/jr.jpeg": "/tsteer050.github.io/static/media/jr.5833ff903b9a6962fe1a.jpeg",
+    "static/media/TRVSTR.jpg": "/tsteer050.github.io/static/media/TRVSTR.e9b80e601d6c36f0113b.jpg",
+    "static/media/jr2.jpeg": "/tsteer050.github.io/static/media/jr2.122e44b09fba908c6d77.jpeg",
+    "static/media/Canela-Regular-Trial.otf": "/tsteer050.github.io/static/media/Canela-Regular-Trial.edc32bd0aadc5ef6691b.otf",
+    "static/media/TextBook-Bold.ttf": "/tsteer050.github.io/static/media/TextBook-Bold.fed57906f25882ae9d63.ttf",
+    "static/media/TextBook-Regular.ttf": "/tsteer050.github.io/static/media/TextBook-Regular.731f0324009371f89077.ttf",
+    "static/media/facebook.svg": "/tsteer050.github.io/static/media/facebook.e09388dd4049a2d871645462898ec5f7.svg",
+    "static/media/instagram.svg": "/tsteer050.github.io/static/media/instagram.b126efb3cdd1ad030e6fd28b07a29c6b.svg",
+    "static/media/youtube.svg": "/tsteer050.github.io/static/media/youtube.9ed97cc0f97e46369b08a978956032c5.svg",
+    "index.html": "/tsteer050.github.io/index.html",
+    "main.2d97ae8b.css.map": "/tsteer050.github.io/static/css/main.2d97ae8b.css.map",
+    "main.594375f8.js.map": "/tsteer050.github.io/static/js/main.594375f8.js.map",
+    "787.84264fb6.chunk.js.map": "/tsteer050.github.io/static/js/787.84264fb6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d97ae8b.css",
+    "static/js/main.594375f8.js"
+  ]
+}
