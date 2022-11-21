@@ -1,6 +1,6 @@
 import React from "react";
 import coverArt from "../../assets/TRVSTR.jpg";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./albumCTA.scss";
 
 const AlbumCTA = () => {
