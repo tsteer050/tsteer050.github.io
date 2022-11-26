@@ -13,19 +13,21 @@ const Header = () => {
     return (
         <header>
             <nav className={showNavMenu ? "responsive_nav" : ""}>
-                <Link to={"/"} style={{ textDecoration: "none" }} onClick={() => setShowNavMenu(false)}>
-                    Home
-                </Link>
-                <Link to={"/about"} style={{ textDecoration: "none" }} onClick={() => setShowNavMenu(false)}>
-                    About
-                </Link>
-                <h1 style={{ userSelect: "none" }}>TREVOR STEER</h1>
-                <Link to={"/listen"} style={{ textDecoration: "none" }} onClick={() => setShowNavMenu(false)}>
-                    Listen
-                </Link>
-                <Link to={"/contact"} style={{ textDecoration: "none" }} onClick={() => setShowNavMenu(false)}>
-                    Contact
-                </Link>
+                <div className="nav-options">
+                    <Link to={"/"} style={{ textDecoration: "none" }} onClick={() => setShowNavMenu(false)}>
+                        Home
+                    </Link>
+                    <Link to={"/about"} style={{ textDecoration: "none" }} onClick={() => setShowNavMenu(false)}>
+                        About
+                    </Link>
+                    <h1 style={{ userSelect: "none" }}>TREVOR STEER</h1>
+                    <Link to={"/listen"} style={{ textDecoration: "none" }} onClick={() => setShowNavMenu(false)}>
+                        Listen
+                    </Link>
+                    <Link to={"/contact"} style={{ textDecoration: "none" }} onClick={() => setShowNavMenu(false)}>
+                        Contact
+                    </Link>
+                </div>
             </nav>
             <DropdownButton toggleNavMenu={toggleNavMenu} showNavMenu={showNavMenu} />
         </header>

@@ -22,28 +22,38 @@ const SubscribeForm = ({ status, message, onValidated }) => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input 
-                value={firstName}
-                type="text"
-                placeholder="First Name"
-                required={true}
-                onChange={(e) => setFirstName(e.target.value)}
-            />
-            <input 
-                value={lastName}
-                type="text"
-                placeholder="Last Name"
-                required={true}
-                onChange={(e) => setLastName(e.target.value)}
-            />
-            <input
-                value={email}
-                type="email"
-                placeholder="Email Address"
-                required={true}
-                onChange={(e) => setEmail(e.target.value)}
-            />
-            <input type="submit" value="SUBMIT" />
+            {status === "success" ? (
+                <div>
+                    <p>
+                        {message}
+                    </p>
+                </div>
+            ) : (
+                <>
+                    <input 
+                        value={firstName}
+                        type="text"
+                        placeholder="First Name"
+                        required={true}
+                        onChange={(e) => setFirstName(e.target.value)}
+                    />
+                    <input 
+                        value={lastName}
+                        type="text"
+                        placeholder="Last Name"
+                        required={true}
+                        onChange={(e) => setLastName(e.target.value)}
+                    />
+                    <input
+                        value={email}
+                        type="email"
+                        placeholder="Email Address"
+                        required={true}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <input type="submit" value="SUBMIT" />
+                </>
+            )}
         </form>
     );
 };

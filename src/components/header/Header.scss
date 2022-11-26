@@ -6,6 +6,12 @@
 
 header {
 	nav {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}	
+	.nav-options {
 		box-sizing: border-box;
 		width: 100vw;
 		height: $headerHeight;
@@ -16,10 +22,8 @@ header {
 		padding: 12px 0;
 		:not(:last-child) {
 			margin-right: 36px;
-		}
+		}	
 	}
-
-	
 }
 
 @media only screen and (max-width: 1024px) {
@@ -31,31 +35,41 @@ header {
         right: 32px;
 	}
 
-	header nav {
+	header 
+		nav {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			gap: 1.5rem;
+			background-color: var(--mainColor);
+			transition: 1s;
+			transform: translateY(-100vh);
+
+		}
+
+	header .nav-options {
 		position: fixed;
 		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
+		
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		gap: 1.5rem;
-		background-color: var(--mainColor);
-		transition: 1s;
-		transform: translateY(-100vh);
+		height: 100vh;
 		:not(:last-child) {
 			margin-right: 0;
+		}	
+		a {
+			line-height: 48px;
 		}
-		
 	}
 
 	header .responsive_nav {
 		transform: none;
 		background: #000000;
 		box-sizing: border-box;
-		padding-bottom: calc(100% - 50vh); // THIS ADDS UNNECESSARY PADDING TO NORMAL SIZE PAGES
 	}
 
 	nav .nav-close-btn {
